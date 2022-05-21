@@ -112,14 +112,14 @@
                 compatible = "zmk,keymap";
                 colemak_layer {
 // ---------------------------------------------------------------------------
-// |     |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |     |     |
-// |     |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |     |
-// |     |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |BKSPC|     |
+// |     |  Q  |  D  |  R  |  W  |  B  | |  j  |  f  |  u  |  ;  |     |     |
+// |     |  a  |  s  |  h  |  t  |  g  | |  y  |  n  |  e  |  o  |  i  |     |
+// |     |  z  |  x  |  m  |  c  |  v  | |  k  |  l  |  ,  |  .  |BKSP |     |
 //                   | OPT |-SYM-| SPC | | RET |-NUM-| CMD |
                         bindings = <
-   &none &kp Q &kp W &kp F &kp P &kp B &kp J &kp L   &kp U     &kp Y   &none  &none
-   &none &kp A &kp R &kp S &kp T &kp G &kp M &kp N   &kp E     &kp I   &kp O     &none
-   &none &kp Z &kp X &kp C &kp D &kp V &kp K &kp H   &kp COMMA &kp DOT &kp BSPC &none
+   &none &kp Q &kp D &kp R &kp W &kp B &kp J &kp F   &kp U     &kp SEMI  &none  &none
+   &none &kp A &kp S &kp H &kp T &kp G &kp Y &kp N   &kp E     &kp O   &kp I     &none
+   &none &kp Z &kp X &kp M &kp C &kp V &kp K &kp L   &kp COMMA &kp DOT &kp BSPC &none
             &kp LALT &mo SYM &kp SPACE &kp RET &mo NUM &kp RCMD
                         >;
                 };
@@ -151,12 +151,12 @@
                 };
                 fun_layer {
 // ---------------------------------------------------------------------------
-// |     |     | F 6 | F 5 | F 4 | F10 | | BT0 | BT1 | USB | BLE |     |     |
+// |     |     | F 6 | F 5 | F 4 | F10 | | BT0 | BT1 | BT2 | USB | BLE |     |
 // |     |CAPSL| F 3 | F 2 | F 1 | F11 | |VMUTE|VOLDN|VOLUP|BRIDN|BRIUP|     |
 // |     |_FUN_| F 9 | F 8 | F 7 | F12 | | <!> | <!> |SLEEP|-!!!-|<LCK>|
 //                   | OPT |_SYM_| SPC | | RET |<LCK>| CMD |
                         bindings = <
-   &none &bt BT_CLR &kp F6 &kp F5 &kp F4 &kp F10  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_USB &out OUT_BLE &none &none
+   &none &bt BT_CLR &kp F6 &kp F5 &kp F4 &kp F10  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &out OUT_USB &out OUT_BLE &none 
    &none &kp CAPS &kp F3   &kp F2 &kp F1 &kp F11      &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp C_BRI_DN &kp C_BRI_UP &none
    &none &trans &kp F9 &kp F8 &kp F7  &kp F12      &none  &none &none &mo DANGER &to LCK   &none
                          &trans &trans &trans &trans &to LCK &trans 
