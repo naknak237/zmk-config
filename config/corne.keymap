@@ -19,7 +19,6 @@
 #define NAV 4
 #define DANGER 5
 #define LCK 6
-#define QRT 7
 
 &caps_word {
    continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -205,19 +204,6 @@
 &none &none &none &none &none &none &none &none &none &none &none &none 
 &none &none &none &none &none &none 
                     >;
-                };
-                qwerty_layer {
-// ---------------------------------------------------------------------------
-// |     |  Q  |  D  |  R  |  W  |  B  | |  j  |  f  |  u  |  ;  |     |     |
-// |     |  a  |  s  |  h  |  t  |  g  | |  y  |  n  |  e  |  o  |  i  |     |
-// |     |  z  |  x  |  m  |  c  |  v  | |  k  |  l  |  ,  |  .  |BKSP |     |
-//                   | OPT |tap ESC hold -SYM-| SPC | | RET |-NUM-| CMD |
-                        bindings = <
-   &none &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U   &kp I     &kp O   &kp P    &none
-   &tog QRT &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI &none
-   &none &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
-            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
-                        >;
                 };
         };
 };
