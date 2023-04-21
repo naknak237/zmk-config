@@ -179,14 +179,14 @@
 // ---------------------------------------------------------------------------
 // |     |     |     |     |     |     | |     |     |     |     |     |     |
 // |     |     |     |     |     |     | |     |     |     |     |EP ON|     |
-// |     |_FUN_|     |     |     |     | |BTCLR|RESET|     |_!!!_|EPOFF|     |
+// |     |_FUN_|     |     |     |     | |BTCLR|     |     |_!!!_|EPOFF|     |
 //                   |     |_SYM_|     | |     |     |     |
                     // impactful buttons
                     // Bluetooth clear, reset
                     bindings = <
 &none &none &none &none &none &none &none &none &none &none &none &none 
 &none &none &none &none &none &none &none &none &none &none &ext_power EP_ON &none 
-&none &trans &none &none &none &none &bt BT_CLR &reset &none &trans &ext_power EP_OFF &none 
+&none &trans &none &none &none &none &bt BT_CLR &none &none &trans &ext_power EP_OFF &none 
 &none &trans &none &none &none &none 
                     >;
                 };
