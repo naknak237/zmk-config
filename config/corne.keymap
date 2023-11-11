@@ -43,7 +43,7 @@
     combos {
         compatible = "zmk,combos";
         combo_wf_shift {
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 7>;
             timeout-ms = <50>;
             // D + R
             key-positions = <2 3>;
@@ -57,7 +57,7 @@
             bindings = <&caps_word>;
         };
         combo_xc_ctrl {
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 7>;
             timeout-ms = <50>;
             // X + M
             key-positions = <26 27>;
