@@ -209,7 +209,7 @@
                         bindings = <
    &tog QRT &kp Q &kp W &kp E &kp R &kp T &kp Y &kp I   &kp O    &kp U   &kp P  &none
    &none &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI    &none
-   &none &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
             &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
                         >;
                 };
