@@ -113,12 +113,12 @@
                 workman_layer {
 // ---------------------------------------------------------------------------
 // |Tqrt |  Q  |  D  |  R  |  W  |  B  | |  J  |  F  |  U  |  ;  |     |Alt+F4|
-// |Down |  A  |  S  |  H  |  T  |  G  | |  Y  |  N  |  E  |  O  |  I  | RAlt|
+// | TAB |  A  |  S  |  H  |  T  |  G  | |  Y  |  N  |  E  |  O  |  I  | RAlt|
 // |shift|  Z  |  X  |  M  |  C  |  V  | |  K  |  L  |  ,  |  .  |BKSP |shift|
 //      | OPT |tap ESC hold -SYM-| SPC | | RET |-NUM-| CMD |
                         bindings = <
    &tog QRT &kp Q &kp D &kp R &kp W &kp B &kp J &kp F &kp U &kp P &kp SEMI &kp LA(F4)
-   &kp DOWN &kp A &kp S &kp H &kp T &kp G &kp Y &kp N &kp E &kp O &kp I &kp RALT
+   &kp TAB &kp A &kp S &kp H &kp T &kp G &kp Y &kp N &kp E &kp O &kp I &kp RALT
    &kp LSHFT &lt MCF Z &kp X &kp M &kp C &kp V &kp K &kp L &kp COMMA &kp DOT &kp BSPC &kp LSHFT
             &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
                         >;
@@ -208,7 +208,7 @@
 //                   | OPT |tap ESC hold -SYM-| SPC | | RET |-NUM-| CMD |
                         bindings = <
    &tog QRT &kp Q &kp W &kp E &kp R &kp T &kp Y &kp I   &kp O    &kp U   &kp P  &none
-   &none &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI    &none
+   &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI    &none
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
             &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
                         >;
