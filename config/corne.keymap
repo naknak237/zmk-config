@@ -120,19 +120,19 @@
    &tog QRT &kp Q &kp D &kp R &kp W &kp B &kp J &kp F &kp U &kp P &kp SEMI &kp LA(F4)
    &kp TAB &kp A &kp S &kp H &kp T &kp G &kp Y &kp N &kp E &kp O &kp I &kp RALT
    &kp LSHFT &lt MCF Z &kp X &kp M &kp C &kp V &kp K &kp L &kp COMMA &kp DOT &kp BSPC &kp LSHFT
-            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
+            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LGUI
                         >;
                 };
                 symbol_layer {
 // ---------------------------------------------------------------------------
-// |     |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |     |
-// |     |  *  |  (  |  )  |  :  |     | |     |  '  |  [  |  ]  |  ;  |     |
-// |     |-FUN-|  `  |  @  |  &  |     | |     |  #  |  <  |  >  | DEL |     |
+// |     |     |  \  |  %  |  $  |      | |     |  ^  |  {  |  }  |     |     |
+// |     |  *  |  (  |  )  |  :  | Copy | |     |  '  |  [  |  ]  |  ;  |     |
+// |     |-FUN-|  `  |  @  |  &  | Paste| |     |  #  |  <  |  >  | DEL |     |
 //                   | OPT |_SYM_| SPACE | | RET | ESC | CMD |
                         bindings = <
    &none &none  &kp BSLH &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none  &none
-   &none &kp STAR &kp LPAR &kp RPAR  &kp COLON &none &none &kp SQT   &kp LBKT &kp RBKT &kp SEMI  &none
-   &none &mo FUN  &kp GRAVE   &kp AT  &kp AMPS  &none &none &kp HASH &kp LT   &kp GT   &kp DEL &none
+   &none &kp STAR &kp LPAR &kp RPAR  &kp COLON &C_AC_COPY &none &kp SQT   &kp LBKT &kp RBKT &kp SEMI  &none
+   &none &mo FUN  &kp GRAVE   &kp AT  &kp AMPS  &C_AC_PASTE &none &kp HASH &kp LT   &kp GT   &kp DEL &none
                              &trans &trans &kp SPACE &kp RET &kp ESC &trans
                         >;
                 };
@@ -152,12 +152,12 @@
                 fun_layer {
 // ---------------------------------------------------------------------------
 // |     |     | F 6 | F 5 | F 4 | F10 | | BT0 | BT1 | BT2 | USB | BLE |     |
-// |     |CAPSL| F 3 | F 2 | F 1 | F11 | |VMUTE|VOLDN|VOLUP|BRIDN|BRIUP|     |
+// |     |CAPSL| F 3 | F 2 | F 1 | F11 | |VMUTE|Prev |Media|Next |     |
 // |     |_FUN_| F 9 | F 8 | F 7 | F12 | | <!> | <!> |SLEEP|-!!!-|<LCK>|
 //                   | OPT |_SYM_| SPC | | RET |<LCK>| CMD |
                         bindings = <
    &none &bt BT_CLR &kp F6 &kp F5 &kp F4 &kp F10  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &out OUT_USB &out OUT_BLE &none 
-   &none &kp CAPS &kp F3   &kp F2 &kp F1 &kp F11      &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp C_BRI_DN &kp C_BRI_UP &none
+   &none &kp CAPS &kp F3   &kp F2 &kp F1 &kp F11      &kp K_MUTE &kp C_PREVIOUS &kp C_PLAY_PAUSE  &kp C_NEXT &none &none
    &none &trans &kp F9 &kp F8 &kp F7  &kp F12      &none  &none &none &mo DANGER &to LCK   &none
                          &trans &trans &trans &trans &to LCK &trans 
                         >;
@@ -210,7 +210,7 @@
    &tog QRT &kp Q &kp W &kp E &kp R &kp T &kp Y &kp I   &kp O    &kp U   &kp P  &none
    &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI    &none
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
-            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp RCMD
+            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LGUI
                         >;
                 };
                 minecraft_layer {
