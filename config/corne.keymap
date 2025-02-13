@@ -131,8 +131,8 @@
 //                   | OPT |_SYM_| SPACE | | RET | ESC | CMD |
                         bindings = <
    &none &none  &kp BSLH &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none  &none
-   &none &kp STAR &kp LPAR &kp RPAR  &kp COLON &C_AC_COPY &none &kp SQT   &kp LBKT &kp RBKT &kp SEMI  &none
-   &none &mo FUN  &kp GRAVE   &kp AT  &kp AMPS  &C_AC_PASTE &none &kp HASH &kp LT   &kp GT   &kp DEL &none
+   &none &kp STAR &kp LPAR &kp RPAR  &kp COLON &kp C_AC_COPY &none &kp SQT   &kp LBKT &kp RBKT &kp SEMI  &none
+   &none &mo FUN  &kp GRAVE   &kp AT  &kp AMPS  &kp C_AC_PASTE &none &kp HASH &kp LT   &kp GT   &kp DEL &none
                              &trans &trans &kp SPACE &kp RET &kp ESC &trans
                         >;
                 };
