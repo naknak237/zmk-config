@@ -115,12 +115,12 @@
 // |Tqrt |  Q  |  D  |  R  |  W  |  B  | |  J  |  F  |  U  |  ;  |     |Alt+F4|
 // | TAB |  A  |  S  |  H  |  T  |  G  | |  Y  |  N  |  E  |  O  |  I  | RAlt|
 // |shift|  Z  |  X  |  M  |  C  |  V  | |  K  |  L  |  ,  |  .  |BKSP |shift|
-//      | OPT |tap ESC hold -SYM-| SPC | | RET |-NUM-| CMD |
+//      | CMD |tap ESC hold -SYM-| SPC | | RET |-NUM-| OPT |
                         bindings = <
    &tog QRT &kp Q &kp D &kp R &kp W &kp B &kp J &kp F &kp U &kp P &kp SEMI &kp LA(F4)
    &kp TAB &kp A &kp S &kp H &kp T &kp G &kp Y &kp N &kp E &kp O &kp I &kp RALT
    &kp LSHFT &lt MCF Z &kp X &kp M &kp C &kp V &kp K &kp L &kp COMMA &kp DOT &kp BSPC &kp LSHFT
-            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LGUI
+            &kp LGUI &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LALT
                         >;
                 };
                 symbol_layer {
@@ -205,12 +205,12 @@
 // |TQRT |  Q  |  D  |  R  |  W  |  B  | |  j  |  f  |  u  |  ;  |     |     |
 // |     |  a  |  s  |  h  |  t  |  g  | |  y  |  n  |  e  |  o  |  i  |     |
 // |shift|  z  |  x  |  m  |  c  |  v  | |  k  |  l  |  ,  |  .  |BKSP |shift|
-//                   | OPT |tap ESC hold -SYM-| SPC | | RET |-NUM-| CMD |
+//                   | GUI |tap ESC hold -SYM-| SPC | | RET |-NUM-| OPT |
                         bindings = <
    &tog QRT &kp Q &kp W &kp E &kp R &kp T &kp Y &kp I   &kp O    &kp U   &kp P  &none
    &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J   &kp K     &kp L   &kp SEMI    &none
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M   &kp COMMA &kp DOT &kp BSPC &none
-            &kp LALT &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LGUI
+            &kp LGUI &lt SYM ESC &kp SPACE &kp RET &mo NUM &kp LALT
                         >;
                 };
                 minecraft_layer {
@@ -218,12 +218,12 @@
 // |     |     |  4  |  5  |  6  | F 3 | |     |     |     |     |     |     |
 // |     |     |  1  |  2  |  3  |  F  | |     |     |     |     |     |     |
 // |     |     |  7  |  8  |  9  |     | |     |     |     |     |     |     |
-//                   |     | OPT |shift| |     |     |     |
+//                   |     | GUI |shift| |     |     |     |
                     bindings = <
 &none &none &kp N4 &kp N5 &kp N6 &kp F3 &none &none &none &none &none &none 
 &none &none &kp N1 &kp N2 &kp N3 &kp F &none &none &none &none &none &none 
 &none &none &kp N7 &kp N8 &kp N9 &none &none &none &none &none &none &none 
-                     &none &kp LALT &kp LSHFT &none &none &none 
+                     &none &kp LGUI &kp LSHFT &none &none &none 
                     >;
                 };
         };
